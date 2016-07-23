@@ -7,5 +7,5 @@ target 'objShe' do
 
   # Pods for objShe
 pod "Koloda"
-
+pod “Parse”
 end
