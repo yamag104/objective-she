@@ -16,6 +16,7 @@
 		77CB12BF1D43335700E7DED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB12BE1D43335700E7DED5 /* AppDelegate.swift */; };
 		77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C51D43335700E7DED5 /* Assets.xcassets */; };
 		77CB12C91D43335700E7DED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */; };
+		BF44F0D01D441958000265CB /* FindMentorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF44F0CF1D441958000265CB /* FindMentorViewController.xib */; };
 		F1963B3A82143F2942B99286 /* Pods_objShe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E84638FED97667F8C7C2CE /* Pods_objShe.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		77CB12C51D43335700E7DED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77CB12C81D43335700E7DED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77CB12CA1D43335700E7DED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF44F0CF1D441958000265CB /* FindMentorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindMentorViewController.xib; sourceTree = "<group>"; };
 		E11C9CBCBB923E79ECAB40C2 /* Pods-objShe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objShe.release.xcconfig"; path = "Pods/Target Support Files/Pods-objShe/Pods-objShe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				77CB12C51D43335700E7DED5 /* Assets.xcassets */,
 				77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */,
 				77CB12CA1D43335700E7DED5 /* Info.plist */,
+				BF44F0CF1D441958000265CB /* FindMentorViewController.xib */,
 			);
 			path = objShe;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */,
 				773E2EBC1D440CD000E948A4 /* OverlayView.xib in Resources */,
 				773E2E9D1D43F0D100E948A4 /* LoginViewController.xib in Resources */,
+				BF44F0D01D441958000265CB /* FindMentorViewController.xib in Resources */,
 				773E2EB81D44026800E948A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
