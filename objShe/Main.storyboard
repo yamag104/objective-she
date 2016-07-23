@@ -20,11 +20,69 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIa-1o-ll0" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software Engineering Manager at Youtube" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZK-mC-jVh">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="-8" y="241" width="317" height="68"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michelle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAi-1v-ROZ" userLabel="Name Label">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="84" id="jji-ww-8tC">
+                                                <variation key="widthClass=compact" constant="317"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jji-ww-8tC"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="jji-ww-8tC"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Phg-Un-6pB"/>
                                     <constraint firstAttribute="height" constant="300" id="Ptf-jP-C15"/>
+                                    <constraint firstItem="PAi-1v-ROZ" firstAttribute="centerX" secondItem="LIa-1o-ll0" secondAttribute="centerX" id="sPH-82-eqY"/>
+                                    <constraint firstAttribute="bottom" secondItem="PAi-1v-ROZ" secondAttribute="bottom" constant="67" id="tky-9H-o74">
+                                        <variation key="widthClass=compact" constant="61"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="5ZK-mC-jVh"/>
+                                        <exclude reference="PAi-1v-ROZ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="sPH-82-eqY"/>
+                                        <exclude reference="tky-9H-o74"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="5ZK-mC-jVh"/>
+                                        <include reference="PAi-1v-ROZ"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="sPH-82-eqY"/>
+                                        <include reference="tky-9H-o74"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awu-oh-3Hk">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
