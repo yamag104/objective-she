@@ -17,8 +17,7 @@
 		77CB12BF1D43335700E7DED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB12BE1D43335700E7DED5 /* AppDelegate.swift */; };
 		77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C51D43335700E7DED5 /* Assets.xcassets */; };
 		77CB12C91D43335700E7DED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */; };
-		BF44F0DB1D4420C0000265CB /* MentorMenteeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44F0DA1D4420C0000265CB /* MentorMenteeView.swift */; };
-		BF44F0DD1D4420E7000265CB /* MentorMenteeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF44F0DC1D4420E7000265CB /* MentorMenteeView.xib */; };
+		BF44F0D01D441958000265CB /* FindMentorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF44F0CF1D441958000265CB /* FindMentorViewController.xib */; };
 		F1963B3A82143F2942B99286 /* Pods_objShe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E84638FED97667F8C7C2CE /* Pods_objShe.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +35,7 @@
 		77CB12BE1D43335700E7DED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77CB12C51D43335700E7DED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77CB12CA1D43335700E7DED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF44F0DA1D4420C0000265CB /* MentorMenteeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentorMenteeView.swift; sourceTree = "<group>"; };
-		BF44F0DC1D4420E7000265CB /* MentorMenteeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MentorMenteeView.xib; sourceTree = "<group>"; };
+		BF44F0CF1D441958000265CB /* FindMentorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindMentorViewController.xib; sourceTree = "<group>"; };
 		E11C9CBCBB923E79ECAB40C2 /* Pods-objShe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objShe.release.xcconfig"; path = "Pods/Target Support Files/Pods-objShe/Pods-objShe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +82,7 @@
 				77CB12C51D43335700E7DED5 /* Assets.xcassets */,
 				773E2EBF1D44215900E948A4 /* Launch Screen.storyboard */,
 				77CB12CA1D43335700E7DED5 /* Info.plist */,
-				BF44F0DA1D4420C0000265CB /* MentorMenteeView.swift */,
-				BF44F0DC1D4420E7000265CB /* MentorMenteeView.xib */,
+				BF44F0CF1D441958000265CB /* FindMentorViewController.xib */,
 			);
 			path = objShe;
 			sourceTree = "<group>";
@@ -169,19 +166,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				77CB12C91D43335700E7DED5 /* LaunchScreen.storyboard in Resources */,
-				BF44F0DD1D4420E7000265CB /* MentorMenteeView.xib in Resources */,
-				77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */,
-				773E2EBC1D440CD000E948A4 /* OverlayView.xib in Resources */,
-				773E2E9D1D43F0D100E948A4 /* LoginViewController.xib in Resources */,
-=======
 				77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */,
 				773E2EBC1D440CD000E948A4 /* OverlayView.xib in Resources */,
 				773E2E9D1D43F0D100E948A4 /* LoginViewController.xib in Resources */,
 				773E2EC01D44215900E948A4 /* Launch Screen.storyboard in Resources */,
 				BF44F0D01D441958000265CB /* FindMentorViewController.xib in Resources */,
->>>>>>> origin/master
 				773E2EB81D44026800E948A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +233,6 @@
 				773E2EBE1D440D1100E948A4 /* ExampleOverlayView.swift in Sources */,
 				773E2EBA1D44028D00E948A4 /* MatchViewController.swift in Sources */,
 				773E2E9C1D43F0D100E948A4 /* LoginViewController.swift in Sources */,
-				BF44F0DB1D4420C0000265CB /* MentorMenteeView.swift in Sources */,
 				77CB12BF1D43335700E7DED5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
