@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Match View Controller-->
@@ -19,55 +19,109 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIa-1o-ll0" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="100" y="120" width="400" height="380"/>
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="500" id="mjd-2K-kGK"/>
-                                    <constraint firstAttribute="height" constant="128" id="nNn-IZ-x4s"/>
-                                    <constraint firstAttribute="width" secondItem="LIa-1o-ll0" secondAttribute="height" multiplier="15:8" id="y2n-sD-oak"/>
+                                    <constraint firstAttribute="width" constant="300" id="Phg-Un-6pB"/>
+                                    <constraint firstAttribute="height" constant="300" id="Ptf-jP-C15"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awu-oh-3Hk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edm-cS-vTl" userLabel="Dislike Button">
+                                        <rect key="frame" x="234" y="500" width="86" height="32"/>
+                                        <state key="normal" image="btn_skip_normal"/>
+                                        <connections>
+                                            <action selector="leftButtonTapped" destination="2hb-fu-qoh" eventType="touchUpInside" id="zmJ-2C-vTW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBT-Cq-CUR" userLabel="Like Button">
+                                        <rect key="frame" x="370" y="500" width="86" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="q4H-gN-lW6"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_like_normal"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="q4H-gN-lW6"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="rightButtonTapped" destination="2hb-fu-qoh" eventType="touchUpInside" id="quy-d4-5WP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="edm-cS-vTl" firstAttribute="top" secondItem="Awu-oh-3Hk" secondAttribute="top" constant="-472" id="8fG-jQ-kdb">
+                                        <variation key="widthClass=compact" constant="10"/>
+                                    </constraint>
+                                    <constraint firstItem="edm-cS-vTl" firstAttribute="top" secondItem="GBT-Cq-CUR" secondAttribute="top" id="Vj8-lq-eJ0"/>
+                                    <constraint firstItem="edm-cS-vTl" firstAttribute="leading" secondItem="Awu-oh-3Hk" secondAttribute="leading" constant="35" id="WTi-K1-z79">
+                                        <variation key="widthClass=compact" constant="55"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="GBT-Cq-CUR" secondAttribute="trailing" constant="55" id="bOc-Dp-dGK"/>
                                 </constraints>
                                 <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="edm-cS-vTl"/>
+                                        <exclude reference="GBT-Cq-CUR"/>
+                                    </mask>
                                     <mask key="constraints">
-                                        <exclude reference="mjd-2K-kGK"/>
-                                        <exclude reference="nNn-IZ-x4s"/>
-                                        <exclude reference="y2n-sD-oak"/>
+                                        <exclude reference="8fG-jQ-kdb"/>
+                                        <exclude reference="Vj8-lq-eJ0"/>
+                                        <exclude reference="WTi-K1-z79"/>
+                                        <exclude reference="bOc-Dp-dGK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="edm-cS-vTl"/>
+                                        <include reference="GBT-Cq-CUR"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="8fG-jQ-kdb"/>
+                                        <include reference="Vj8-lq-eJ0"/>
+                                        <include reference="WTi-K1-z79"/>
+                                        <include reference="bOc-Dp-dGK"/>
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edm-cS-vTl">
-                                <rect key="frame" x="183" y="520" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="B7M-PH-GeY"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="btn_skip_normal"/>
-                                <connections>
-                                    <action selector="leftButtonTapped" destination="2hb-fu-qoh" eventType="touchUpInside" id="zmJ-2C-vTW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBT-Cq-CUR">
-                                <rect key="frame" x="303" y="520" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="q4H-gN-lW6"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="btn_like_normal"/>
-                                <connections>
-                                    <action selector="rightButtonTapped" destination="2hb-fu-qoh" eventType="touchUpInside" id="quy-d4-5WP"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kmd-wa-zDC" firstAttribute="top" secondItem="edm-cS-vTl" secondAttribute="bottom" constant="40" id="91X-oE-udK"/>
-                            <constraint firstItem="GBT-Cq-CUR" firstAttribute="top" secondItem="LIa-1o-ll0" secondAttribute="bottom" constant="20" id="AdW-SK-pw1"/>
-                            <constraint firstItem="kmd-wa-zDC" firstAttribute="top" secondItem="GBT-Cq-CUR" secondAttribute="bottom" constant="40" id="Axi-8r-NYq"/>
-                            <constraint firstItem="kmd-wa-zDC" firstAttribute="top" secondItem="LIa-1o-ll0" secondAttribute="bottom" constant="100" id="H7V-NQ-AUZ"/>
-                            <constraint firstItem="LIa-1o-ll0" firstAttribute="leading" secondItem="Gqr-WQ-3ea" secondAttribute="leading" constant="100" id="Jyj-LL-bh6"/>
-                            <constraint firstItem="edm-cS-vTl" firstAttribute="leading" secondItem="Gqr-WQ-3ea" secondAttribute="leading" constant="183" id="WyT-9e-VFa"/>
-                            <constraint firstItem="LIa-1o-ll0" firstAttribute="top" secondItem="hoD-KO-mog" secondAttribute="bottom" constant="100" id="chq-Sh-WU9"/>
-                            <constraint firstItem="GBT-Cq-CUR" firstAttribute="leading" secondItem="edm-cS-vTl" secondAttribute="trailing" constant="80" id="f9O-iV-pFU"/>
-                            <constraint firstAttribute="trailing" secondItem="LIa-1o-ll0" secondAttribute="trailing" constant="100" id="iFJ-jF-id9"/>
-                            <constraint firstItem="edm-cS-vTl" firstAttribute="top" secondItem="LIa-1o-ll0" secondAttribute="bottom" constant="20" id="ue9-OG-kL6"/>
+                            <constraint firstItem="kmd-wa-zDC" firstAttribute="top" secondItem="Awu-oh-3Hk" secondAttribute="bottom" constant="28" id="4kU-zn-akC">
+                                <variation key="widthClass=compact" constant="58"/>
+                            </constraint>
+                            <constraint firstItem="LIa-1o-ll0" firstAttribute="centerY" secondItem="Gqr-WQ-3ea" secondAttribute="centerY" id="Dzm-pc-cIL"/>
+                            <constraint firstItem="Awu-oh-3Hk" firstAttribute="leading" secondItem="Gqr-WQ-3ea" secondAttribute="leadingMargin" constant="60" id="R3p-fg-NSv"/>
+                            <constraint firstItem="Awu-oh-3Hk" firstAttribute="top" secondItem="LIa-1o-ll0" secondAttribute="bottom" constant="22" id="WdV-4x-Twy"/>
+                            <constraint firstItem="LIa-1o-ll0" firstAttribute="centerX" secondItem="Gqr-WQ-3ea" secondAttribute="centerX" id="rfa-XE-Kaq"/>
+                            <constraint firstItem="Awu-oh-3Hk" firstAttribute="centerX" secondItem="LIa-1o-ll0" secondAttribute="centerX" id="vby-Mb-F7S"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Awu-oh-3Hk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="R3p-fg-NSv"/>
+                                <exclude reference="WdV-4x-Twy"/>
+                                <exclude reference="vby-Mb-F7S"/>
+                                <exclude reference="4kU-zn-akC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Awu-oh-3Hk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="R3p-fg-NSv"/>
+                                <include reference="WdV-4x-Twy"/>
+                                <include reference="vby-Mb-F7S"/>
+                                <include reference="4kU-zn-akC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="kolodaView" destination="LIa-1o-ll0" id="QyW-Pq-tbE"/>
@@ -75,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efb-3z-lGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="885"/>
+            <point key="canvasLocation" x="1497" y="908"/>
         </scene>
     </scenes>
     <resources>
