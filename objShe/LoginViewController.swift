@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackground()
     }
 
     override func didReceiveMemoryWarning() {
