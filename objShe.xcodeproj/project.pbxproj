@@ -13,6 +13,8 @@
 		773E2EBA1D44028D00E948A4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E2EB91D44028C00E948A4 /* MatchViewController.swift */; };
 		773E2EBC1D440CD000E948A4 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773E2EBB1D440CD000E948A4 /* OverlayView.xib */; };
 		773E2EBE1D440D1100E948A4 /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E2EBD1D440D1100E948A4 /* ExampleOverlayView.swift */; };
+		7755EDE01D442D52008B0F46 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755EDDF1D442D52008B0F46 /* ChatViewController.swift */; };
+		7755EDE21D442F6D008B0F46 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755EDE11D442F6D008B0F46 /* SwiftyJSON.swift */; };
 		77CB12BF1D43335700E7DED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB12BE1D43335700E7DED5 /* AppDelegate.swift */; };
 		77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C51D43335700E7DED5 /* Assets.xcassets */; };
 		77CB12C91D43335700E7DED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */; };
@@ -24,12 +26,16 @@
 /* Begin PBXFileReference section */
 		30E84638FED97667F8C7C2CE /* Pods_objShe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_objShe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AC7DCA9025E4FF1DE03185 /* Pods-objShe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objShe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-objShe/Pods-objShe.debug.xcconfig"; sourceTree = "<group>"; };
+		7723FB8E1D44333C00E08C11 /* IPMQuickstart-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPMQuickstart-Bridging-Header.h"; sourceTree = "<group>"; };
 		773E2E9A1D43F0D100E948A4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		773E2E9B1D43F0D100E948A4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		773E2EB71D44026800E948A4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		773E2EB91D44028C00E948A4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		773E2EBB1D440CD000E948A4 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 		773E2EBD1D440D1100E948A4 /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
+		7755EDDD1D442D0E008B0F46 /* TwilioIPMessagingClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwilioIPMessagingClient.framework; path = "../../Downloads/twilio-rtc-ip-messaging/TwilioIPMessagingClient.framework"; sourceTree = "<group>"; };
+		7755EDDF1D442D52008B0F46 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7755EDE11D442F6D008B0F46 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		77CB12BB1D43335700E7DED5 /* objShe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objShe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB12BE1D43335700E7DED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77CB12C51D43335700E7DED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,8 +83,11 @@
 				77CB12BE1D43335700E7DED5 /* AppDelegate.swift */,
 				773E2EB71D44026800E948A4 /* Main.storyboard */,
 				773E2E9A1D43F0D100E948A4 /* LoginViewController.swift */,
+				7755EDDF1D442D52008B0F46 /* ChatViewController.swift */,
 				773E2EB91D44028C00E948A4 /* MatchViewController.swift */,
+				7755EDE11D442F6D008B0F46 /* SwiftyJSON.swift */,
 				773E2EBD1D440D1100E948A4 /* ExampleOverlayView.swift */,
+				7723FB8E1D44333C00E08C11 /* IPMQuickstart-Bridging-Header.h */,
 				773E2EBB1D440CD000E948A4 /* OverlayView.xib */,
 				773E2E9B1D43F0D100E948A4 /* LoginViewController.xib */,
 				77CB12C51D43335700E7DED5 /* Assets.xcassets */,
@@ -103,6 +112,7 @@
 		C93D9011D63B021CB75976E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7755EDDD1D442D0E008B0F46 /* TwilioIPMessagingClient.framework */,
 				30E84638FED97667F8C7C2CE /* Pods_objShe.framework */,
 			);
 			name = Frameworks;
@@ -238,6 +248,8 @@
 				773E2EBA1D44028D00E948A4 /* MatchViewController.swift in Sources */,
 				773E2E9C1D43F0D100E948A4 /* LoginViewController.swift in Sources */,
 				BF44F0E11D4428B4000265CB /* MentorMenteeView.swift in Sources */,
+				7755EDE21D442F6D008B0F46 /* SwiftyJSON.swift in Sources */,
+				7755EDE01D442D52008B0F46 /* ChatViewController.swift in Sources */,
 				77CB12BF1D43335700E7DED5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sospectra.objShe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IPMQuickstart-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -370,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sospectra.objShe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IPMQuickstart-Bridging-Header.h";
 			};
 			name = Release;
 		};
