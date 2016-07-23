@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        self.window?.rootViewController = LoginViewController()
 //        self.window?.makeKeyAndVisible()
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "ObjectiveShe"
+            $0.clientKey = "CLIENT_KEY"
+            $0.server = "https://stormy-citadel-15484.herokuapp.com/parse"
+        }
+        Parse.initializeWithConfiguration(configuration)
         
         return true
     }
