@@ -8,4 +8,5 @@ target 'objShe' do
   # Pods for objShe
 pod "Koloda"
 pod “Parse”
+pod 'SlackTextViewController'
 end
