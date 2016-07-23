@@ -1,0 +1,6 @@
+framework module Pods_objShe {
+  umbrella header "Pods-objShe-umbrella.h"
+
+  export *
+  module * { export * }
+}
