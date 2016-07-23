@@ -9,4 +9,6 @@ target 'objShe' do
 pod "Koloda"
 pod “Parse”
 pod 'SlackTextViewController'
+pod 'TwilioIPMessagingClient'
+pod 'TwilioCommon'
 end
