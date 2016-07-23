@@ -13,7 +13,6 @@
 		773E2EBA1D44028D00E948A4 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E2EB91D44028C00E948A4 /* MatchViewController.swift */; };
 		773E2EBC1D440CD000E948A4 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773E2EBB1D440CD000E948A4 /* OverlayView.xib */; };
 		773E2EBE1D440D1100E948A4 /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E2EBD1D440D1100E948A4 /* ExampleOverlayView.swift */; };
-		773E2EC01D44215900E948A4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773E2EBF1D44215900E948A4 /* Launch Screen.storyboard */; };
 		77CB12BF1D43335700E7DED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB12BE1D43335700E7DED5 /* AppDelegate.swift */; };
 		77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C51D43335700E7DED5 /* Assets.xcassets */; };
 		77CB12C91D43335700E7DED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */; };
@@ -30,10 +29,10 @@
 		773E2EB91D44028C00E948A4 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		773E2EBB1D440CD000E948A4 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 		773E2EBD1D440D1100E948A4 /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
-		773E2EBF1D44215900E948A4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		77CB12BB1D43335700E7DED5 /* objShe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objShe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CB12BE1D43335700E7DED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77CB12C51D43335700E7DED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77CB12C81D43335700E7DED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77CB12CA1D43335700E7DED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF44F0CF1D441958000265CB /* FindMentorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindMentorViewController.xib; sourceTree = "<group>"; };
 		E11C9CBCBB923E79ECAB40C2 /* Pods-objShe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objShe.release.xcconfig"; path = "Pods/Target Support Files/Pods-objShe/Pods-objShe.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +79,7 @@
 				773E2EBB1D440CD000E948A4 /* OverlayView.xib */,
 				773E2E9B1D43F0D100E948A4 /* LoginViewController.xib */,
 				77CB12C51D43335700E7DED5 /* Assets.xcassets */,
-				773E2EBF1D44215900E948A4 /* Launch Screen.storyboard */,
+				77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */,
 				77CB12CA1D43335700E7DED5 /* Info.plist */,
 				BF44F0CF1D441958000265CB /* FindMentorViewController.xib */,
 			);
@@ -166,11 +165,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CB12C91D43335700E7DED5 /* LaunchScreen.storyboard in Resources */,
+				BF44F0DD1D4420E7000265CB /* MentorMenteeView.xib in Resources */,
 				77CB12C61D43335700E7DED5 /* Assets.xcassets in Resources */,
 				773E2EBC1D440CD000E948A4 /* OverlayView.xib in Resources */,
 				773E2E9D1D43F0D100E948A4 /* LoginViewController.xib in Resources */,
-				773E2EC01D44215900E948A4 /* Launch Screen.storyboard in Resources */,
-				BF44F0D01D441958000265CB /* FindMentorViewController.xib in Resources */,
 				773E2EB81D44026800E948A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +237,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77CB12C71D43335700E7DED5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77CB12C81D43335700E7DED5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		77CB12CB1D43335700E7DED5 /* Debug */ = {
@@ -330,7 +340,6 @@
 			baseConfigurationReference = 72AC7DCA9025E4FF1DE03185 /* Pods-objShe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = objShe/Info.plist;
@@ -347,7 +356,6 @@
 			baseConfigurationReference = E11C9CBCBB923E79ECAB40C2 /* Pods-objShe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = objShe/Info.plist;

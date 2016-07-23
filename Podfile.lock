@@ -5,20 +5,17 @@ PODS:
   - Parse (1.14.2):
     - Bolts/Tasks (~> 1.8)
   - pop (1.0.9)
-  - SlackTextViewController (1.9.3)
 
 DEPENDENCIES:
   - Koloda
   - Parse
-  - SlackTextViewController
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Koloda: 782e61549cafec9fd69fc70c4a8b54bce997894d
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  SlackTextViewController: bd2a34c188d4f7dec93cf42388f38551263fac82
 
-PODFILE CHECKSUM: b02caa2ca6be5b000fd8729c3e6356e0ebb1619b
+PODFILE CHECKSUM: 1e0944943ae4a7cd074e2237612c9783af80f1f0
 
 COCOAPODS: 1.0.1
