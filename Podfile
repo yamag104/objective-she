@@ -2,6 +2,10 @@
 # platform :ios, '9.0'
 
 target 'objShe' do
+
+source 'https://github.com/CocoaPods/Specs'
+source 'https://github.com/twilio/cocoapod-specs'
+
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
@@ -9,6 +13,7 @@ target 'objShe' do
 pod "Koloda"
 pod “Parse”
 pod 'SlackTextViewController'
-pod 'TwilioIPMessagingClient'
-pod 'TwilioCommon'
+pod 'TwilioCommon', :podspec => 'https://media.twiliocdn.com/sdk/ios/common/v0.2/TwilioCommon.podspec'
+pod 'TwilioIPMessagingClient', '~> 0.14.0'
+
 end

@@ -39,5 +39,14 @@ import UIKit
         
         return view
     }
+    
+    @IBAction func findAMentorClicked(sender : UIButton) {
+        self.performSegueWithIdentifier("TransitionToViewCandidates", sender: sender)
+    }
+    
+    @IBAction func beAMentorClicked(sender : UIButton) {
+        self.performSegueWithIdentifier("TransitionToViewCandidates", sender: sender)
+    }
+    
 
 }

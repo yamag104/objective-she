@@ -19,10 +19,16 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZh-Gy-yfZ">
                     <rect key="frame" x="259" y="413" width="83" height="30"/>
                     <state key="normal" title="Be a Mentor"/>
+                    <connections>
+                        <action selector="findAMentorClicked:" destination="-1" eventType="touchUpInside" id="vkV-eq-6oJ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Uc-J4-7eg">
                     <rect key="frame" x="253" y="206" width="95" height="30"/>
                     <state key="normal" title="Find a Mentor"/>
+                    <connections>
+                        <action selector="beAMentorClicked:" destination="-1" eventType="touchUpInside" id="6cG-g3-4dS"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
