@@ -14,6 +14,10 @@ private var numberOfCards: UInt = 5
 class MatchViewController: UIViewController {
     
     @IBOutlet weak var kolodaView: KolodaView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var jobLabel: UILabel!
+    var nameArray : [String] = ["Gina","Yoko","Elizabeth","Elly", "Lina"]
+    var jobArray : [String] = ["Software Engineer", "Software Engineer", "Designer", "Product Manager", "Software QA"]
     
     private var dataSource: Array<UIImage> = {
         var array: Array<UIImage> = []
@@ -71,6 +75,8 @@ extension MatchViewController: KolodaViewDataSource {
     }
     
     func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
+        nameLabel.text = nameArray[Int(index)]
+        jobLabel.text = jobArray[Int(index)]
         return UIImageView(image: dataSource[Int(index)])
     }
     
